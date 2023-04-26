@@ -10,17 +10,59 @@
 </head>
 <body>
   <header>
-    <a href="#"> <img src="app/images/cheshire-county-hygiene-services.svg" alt=""> </a>
-    <nav>
-      <ul>
-        <li><a href="Features">Features</a></li>
-        <li><a href="About">About</a></li>
-        <li><a href="Pricing">Pricing</a></li>
-        <li><a href="Reviews">Reviews</a></li>
-        <li><a href="Contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-inner">
+      <a href="#"> <img src="app/images/cheshire-county-hygiene-services.svg" alt="Cheshire"> </a>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
+  <main>
+    <section class="hero">
+      <div class="section-inner">
+        <div class="section-left">
+          <img src="app/images/cheshire-county-hygiene-services.svg" alt="Cheshire">
+          <h1>Explained propriety of out perpetual to you</h1>
+          <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+          <a href="#">Download</a>
+        </div>
+      <div class="section-right">
+        <div class="form-heading">
+          <h3>Try Your <span>FREE</span> Trial Today</h3>
+        </div>
+        <form action="/">
+          <div>
+            <fieldset>
+              <legend>Your details</legend>
+              <div>
+                <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                <input type="text" id="phone-number" name="phone-number" placeholder="Phone Number">
+              </div>
+            </fieldset>
+            <fieldset class="radio">
+              <legend>Type of subscription</legend>
+              <div>
+                <input type="radio" id="monthly" name="subscription-type" value="monthly" checked>
+                <label for="monthly">Monthly</label>
+              </div>
+              <div>
+                <input type="radio" id="yearly" name="subscription-type" value="yearly">
+                <label for="yearly">Yearly</label>
+              </div>
+            </fieldset>
+          </div>
+          <input type="submit" value="Get started">
+        </form>
+      </div>  
+      </div>
+    </section>
+  </main>
 </body>
 </html>

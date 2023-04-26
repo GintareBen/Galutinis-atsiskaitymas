@@ -1,2 +1,14 @@
+$innerWidth: 1100px;
 @import 'header';
 @import 'body';
+@import 'hero';
+
+section {
+  padding: 0 1rem;
+}
+
+.section-inner {
+  max-width: $innerWidth;
+  margin: 0 auto;
+}
+
