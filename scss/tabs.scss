@@ -1,0 +1,94 @@
+.tabbed {
+    font-size: 14px;
+    background-image: url("../images/christoffer-engstrom-503481-unsplash@2x.png");
+    background-size: cover;
+    background-position: center center;
+    .section-inner {
+        display: flex;
+        padding: 114px 0;
+        gap: 50px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        button {
+            width: 100px;
+            height: 100px;
+            background: #E27866;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            box-shadow: none;
+            border: none;
+            opacity: 0.5;
+            cursor: pointer;
+            span {
+                display: inline-block;
+                transform: rotate(-45deg);
+            }
+            &.selected {
+                opacity: 1;
+            }
+        }
+    }
+    .tabs {
+        position: relative;
+        width: 100%;
+    }
+    .tab {
+        display: flex;
+        opacity: 0;
+        position: absolute;
+        gap: 50px;
+        transform: translateY(50px);
+        transition: all 1s ease-in-out;
+        &.selected {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .content {
+            color: white;
+        }
+        h2 {
+            font-size: 2.25rem;
+            margin: 30px 0;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .content-img {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .single-img {
+            position: relative;
+            &:hover p {
+                opacity: 1;
+                cursor: pointer;
+            }
+            p {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(226, 120, 102, 0.7);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+            }
+            img {
+                background: blue;
+                display: block;
+            }
+        }
+    }
+}
+
+
+
