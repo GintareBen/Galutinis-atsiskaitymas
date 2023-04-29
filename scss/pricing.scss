@@ -1,0 +1,100 @@
+.pricing {
+    background: #6696E2;
+    .section-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 122px 0;
+        gap: 80px;
+        .above {
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          p {
+            font-size: 14px;
+            color: white;
+            font-weight: 300;
+            text-align: center;
+        }
+          h2 {
+            color: white;
+            text-align: center;
+            font-size: 2.25rem;
+            position: relative;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 400;
+            &::after {
+                content: "";
+                position: absolute;
+                background: #E27866;
+                bottom: -1rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 12%;
+                height: 3px;
+            }
+          }
+        }
+       
+        .below {
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            justify-content: space-between;
+            .column {
+                overflow: hidden;
+                background: black;
+                color: white;
+                width: 32%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+                    text-align: center;
+                    &:first-of-type{
+                        font-size: 20px;
+                    }
+                    &.popular {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        width: 100%;
+                        background: #41D395;
+                        padding: 8px;
+                        padding-bottom: 3px;
+                    }
+                }
+                h4 {
+                    font-size: 94px;
+                    font-weight: 300;
+                    text-align: center;
+                    span {
+                        font-size: 25px;
+                    }
+                }
+                ul {
+                    list-style: none;
+                    background: white;
+                    color: #86878B;
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: 300;
+                    border-top: 5px solid #41D395;
+                    li {
+                        text-align: center;
+                        padding: 10px;
+                        text-transform: uppercase;
+                    }
+                }
+                .pricing-info {
+                    width: 100%;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}

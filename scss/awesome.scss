@@ -14,8 +14,10 @@
             font-size: 14px;
             color: #86878B;
             font-weight: 300;
+            text-align: center;
         }
           h2 {
+            text-align: center;
             font-size: 2.25rem;
             position: relative;
             padding-bottom: 20px;
@@ -26,7 +28,8 @@
                 position: absolute;
                 background: #E27866;
                 bottom: -1rem;
-                left: 200px;
+                left: 50%;
+                transform: translateX(-50%);
                 width: 12%;
                 height: 3px;
             }
