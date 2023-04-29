@@ -1,0 +1,29 @@
+footer {
+    font-size: 14px;
+    background: black;
+    color: white;
+    .section-inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 0px;
+    }
+    .text {
+      p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        line-height: 1.6em;
+        color: #86878b;
+      }
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 110px;
+      img {
+        display: inline-block;
+        width: auto;
+        height: 20px;
+      }
+    }
+  }

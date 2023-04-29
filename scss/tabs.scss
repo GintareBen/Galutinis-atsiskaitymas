@@ -3,10 +3,24 @@
     background-image: url("../images/christoffer-engstrom-503481-unsplash@2x.png");
     background-size: cover;
     background-position: center center;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #E27866;
+        opacity: 0.5;
+        z-index: 1;
+    }
     .section-inner {
         display: flex;
         padding: 114px 0;
         gap: 50px;
+        position: relative;
+        z-index: 2;
     }
     .buttons {
         display: flex;
@@ -37,14 +51,12 @@
         width: 100%;
     }
     .tab {
-        display: flex;
-        opacity: 0;
-        position: absolute;
+        display: none;
         gap: 50px;
         transform: translateY(50px);
         transition: all 1s ease-in-out;
         &.selected {
-            opacity: 1;
+            display: flex;
             transform: translateY(0);
         }
         .content {

@@ -8,8 +8,11 @@ $innerWidth: 1100px;
 @import 'awesome';
 @import 'pricing';
 @import 'contact';
+@import 'footer';
 
-section {
+section, 
+header,
+footer  {
   padding: 0 1rem;
 }
 
