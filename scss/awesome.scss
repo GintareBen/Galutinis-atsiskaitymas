@@ -1,7 +1,4 @@
 .awesome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .section-inner {
         display: flex;
         flex-direction: column;
@@ -39,7 +36,24 @@
         .below {
             display: flex;
             width: 100%;
-            gap: 130px;
+            justify-content: space-between;
+            .svg-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                background: white;
+                border: 1px solid #E27866;
+                border-radius: 100%;
+                svg {
+                    width: 50%;
+                    path {
+                        fill: #E27866;
+                    } 
+                }
+            }
+          
             p {
                 font-size: 14px;
                 color: #86878B;
@@ -50,42 +64,14 @@
                 font-weight: 300;
                 font-size: 20px;
             }
-            .same {
-                width: 286px;
+            .column {
+                width: 25%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                // justify-content: center;
                 align-items: center;
                 gap: 50px;
             }
         }
-    }
-}
-
-.svg-container1 {
-    background: white;
-    border: 1px solid #E27866;
-    border-radius: 100%;
-    padding: 9px;
-    svg {
-        width: 27px;
-        height: 27px;
-        path {
-            fill: #E27866;
-        } 
-    }
-}
-
-.svg-container2 {
-    background: white;
-    border: 1px solid #E27866;
-    border-radius: 100%;
-    padding: 10px;
-    svg {
-        width: 30px;
-        height: auto;
-        path {
-            fill: #E27866;
-        } 
     }
 }
