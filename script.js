@@ -1,6 +1,9 @@
 const tabs = document.getElementsByClassName("tab");
 const h1 = document.querySelector("h2");
 const buttons = document.getElementsByTagName("button");
+const menuLinks = document.querySelectorAll("header nav li")
+console.log(menuLinks)
+const sections = document.querySelectorAll("section")
 
 function showTab(event, id) {
   for (let i = 0; i < tabs.length; i++) {
@@ -41,3 +44,20 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   },
 });
+
+window.addEventListener("scroll", function(){
+  let current
+
+  for(let section of sections){
+  if(window.pageYOffset >= section.offsetTop - 50){
+      current = section.getAttribute("id")
+      }
+  }
+
+  for(let menuLink of menuLinks){
+      menuLink.classList.remove("active")
+      if(menuLink.querySelector('a').getAttribute("href") == "#" + current){
+          menuLink.classList.add("active")
+      }
+  }
+})

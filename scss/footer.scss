@@ -6,6 +6,12 @@ footer {
       display: flex;
       justify-content: space-between;
       padding: 50px 0px;
+      @include mobile-max {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 25px 0;
+      }
     }
     .text {
       p {
@@ -20,6 +26,9 @@ footer {
       align-items: center;
       justify-content: space-evenly;
       gap: 110px;
+      @include mobile-max {
+        gap: 20px;
+      }
       img {
         display: inline-block;
         width: auto;

@@ -1,4 +1,5 @@
 $innerWidth: 1100px;
+@import 'mixin';
 @import 'header';
 @import 'body';
 @import 'hero';
@@ -11,9 +12,16 @@ $innerWidth: 1100px;
 @import 'footer';
 @import 'customers';
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   margin-top: 77px;
 }
+
+
 section, 
 header,
 footer  {
@@ -24,5 +32,6 @@ footer  {
   max-width: $innerWidth;
   margin: 0 auto;
 }
+
 
 

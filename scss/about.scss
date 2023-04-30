@@ -6,9 +6,17 @@
         gap: 100px;
         align-items: center;
         padding: 114px 0;
+        @include mobile-max {
+            flex-direction: column;
+            gap: 30px;
+            padding: 60px 0;
+        }
         .section-right,
         .section-left {
             width: 50%;
+            @include mobile-max {
+                width: 100%;
+            }
         }
         .section-left {
             img {
@@ -16,6 +24,9 @@
                 max-width: 390px;
                 height: auto;
                 justify-content: center;
+                @include mobile-max {
+                    width: 30%;
+                }
             }
         }
         .section-right {

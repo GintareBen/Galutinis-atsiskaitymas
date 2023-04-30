@@ -43,7 +43,8 @@ header {
         transform: translateX(-100%);
         bottom: 0;
       }
-      &:hover {
+      &:hover,
+      &.active {
         &::after {
           transform: translateX(0%);
         }
