@@ -9,7 +9,11 @@ $innerWidth: 1100px;
 @import 'pricing';
 @import 'contact';
 @import 'footer';
+@import 'customers';
 
+main {
+  margin-top: 77px;
+}
 section, 
 header,
 footer  {
@@ -20,4 +24,5 @@ footer  {
   max-width: $innerWidth;
   margin: 0 auto;
 }
+
 
