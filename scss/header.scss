@@ -76,12 +76,13 @@ header {
 }
 
 #burger {
+  display: none;
+  @include mobile-max {
+  display: block;
   font-size: 2em;
   box-shadow: none;
   border: none;
   background: none;
   color: white;
-  @include mobile-min {
-    display: none;
   }
 }
