@@ -19,6 +19,9 @@ html {
 
 main {
   margin-top: 77px;
+  @include mobile-max {
+    margin-top: 55px;
+  }
 }
 
 

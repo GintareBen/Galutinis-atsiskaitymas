@@ -49,9 +49,9 @@ window.addEventListener("scroll", function(){
   let current
 
   for(let section of sections){
-  if(window.pageYOffset >= section.offsetTop - 50){
+    if(window.pageYOffset >= section.offsetTop - 50){
       current = section.getAttribute("id")
-      }
+    }
   }
 
   for(let menuLink of menuLinks){
@@ -61,3 +61,10 @@ window.addEventListener("scroll", function(){
       }
   }
 })
+
+const menu = document.querySelector("header nav");
+const burger = document.getElementById("burger");
+burger.addEventListener("click", function(){
+  menu.classList.toggle("open")
+})
+
