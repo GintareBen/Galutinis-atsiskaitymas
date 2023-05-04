@@ -1,17 +1,17 @@
 $innerWidth: 1100px;
-@import 'mixin';
-@import 'header';
-@import 'body';
-@import 'hero';
-@import 'social';
-@import 'tabs';
-@import 'about';
-@import 'awesome';
-@import 'pricing';
-@import 'contact';
-@import 'footer';
-@import 'customers';
-
+@import "mixin";
+@import "header";
+@import "body";
+@import "hero";
+@import "social";
+@import "tabs";
+@import "about";
+@import "awesome";
+@import "pricing";
+@import "contact";
+@import "footer";
+@import "customers";
+@import "input";
 
 html {
   scroll-behavior: smooth;
@@ -24,10 +24,9 @@ main {
   }
 }
 
-
-section, 
+section,
 header,
-footer  {
+footer {
   padding: 0 1rem;
 }
 
@@ -35,6 +34,3 @@ footer  {
   max-width: $innerWidth;
   margin: 0 auto;
 }
-
-
-
