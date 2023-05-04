@@ -2,7 +2,7 @@ const tabs = document.getElementsByClassName("tab");
 const h1 = document.querySelector("h2");
 const buttons = document.getElementsByTagName("button");
 const menuLinks = document.querySelectorAll("header nav li")
-console.log(menuLinks)
+// console.log(menuLinks)
 const sections = document.querySelectorAll("section")
 
 function showTab(event, id) {
@@ -12,7 +12,7 @@ function showTab(event, id) {
   }
   document.getElementById(id).classList.add("selected");
   event.currentTarget.classList.add("selected");
-  console.log(event.currentTarget);
+  // console.log(event.currentTarget);
 }
 
 // Swiper
